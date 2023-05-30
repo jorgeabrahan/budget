@@ -1,0 +1,53 @@
+body {
+  background-color: #f5f6f8;
+}
+
+a:not(.navbar a) {
+  color: #b0b5b9;
+  display: block;
+  width: max-content;
+  margin-inline: auto;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+.field--checkbox {
+  margin-bottom: 1.5rem;
+  padding-inline: 1rem;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #82b2e9, #3470b5);
+  color: white;
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-block: 1rem;
+}
+
+.navbar h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar input[type='submit'] {
+  background: none;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
