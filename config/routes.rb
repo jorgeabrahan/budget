@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :groups, only: [:create, :destroy] do
     resources :dealings, only: [:create, :destroy]
   end
+
+  get '/home', to: 'home#index', as: 'home'
 end
