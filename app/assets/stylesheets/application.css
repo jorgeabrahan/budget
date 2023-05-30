@@ -1,15 +1,58 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.title {
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.btn {
+  border: 3px solid black;
+  padding: 0.4rem 0.8rem;
+  display: block;
+  max-width: max-content;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  box-shadow: 4px 4px 0 0 black;
+}
+
+.inputs {
+  --border-color: #bebebe73;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  display: block;
+  border: none;
+  background: white;
+  outline: transparent;
+}
+
+.field {
+  position: relative;
+}
+
+.inputs .field:not(:first-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0.97);
+  margin-inline: auto;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.input::placeholder {
+  color: #727272;
+}
