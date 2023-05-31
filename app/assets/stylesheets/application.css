@@ -14,15 +14,50 @@ body {
   padding-inline: 1rem;
 }
 
-.btn {
-  border: 3px solid black;
-  padding: 0.4rem 0.8rem;
+.m-block-2 {
+  margin-block: 2rem;
+}
+
+.btn-new {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   display: block;
-  max-width: max-content;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
-  color: black;
-  font-weight: 600;
-  box-shadow: 4px 4px 0 0 black;
+  background-color: #60b524;
+  color: white;
+}
+
+.btn-new__text {
+  border: 2px solid white;
+  padding: 0.6rem 1.4rem;
+  display: block;
+  width: 100%;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #37404a;
+  cursor: pointer;
+}
+
+.link--blue {
+  background-color: #3878c2;
+  transition: background-color 150ms ease-in-out;
+  color: white;
+  border-radius: 5px;
+}
+
+.link--blue:focus {
+  background-color: #5f9ade;
 }
 
 .inputs {
@@ -59,4 +94,8 @@ body {
 
 .input::placeholder {
   color: #727272;
+}
+
+.mt-1-5 {
+  margin-top: 1.5rem;
 }
