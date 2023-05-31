@@ -67,7 +67,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.input {
+.input,
+.input-select {
   width: 100%;
   padding: 0.8rem 1rem;
   display: block;
