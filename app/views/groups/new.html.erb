@@ -1,2 +1,15 @@
-<h1>Groups#new</h1>
-<p>Find me in app/views/groups/new.html.erb</p>
+<section class="mt-1-5">
+  <%= form_with(model: @group, url: groups_path) do |f| %>
+    <div class="inputs">
+      <div class="field">
+        <%= f.text_field :name, placeholder: 'Name', required: true, class: 'input' %>
+      </div>
+      <div class="field">
+        <%= f.url_field :icon, placeholder: 'Icon url', required: true, class: 'input' %>
+      </div>
+    </div>
+    <div class="container">
+      <%= f.submit class: "link link--blue" %>
+    </div>
+  <% end %>
+</section>

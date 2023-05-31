@@ -4,4 +4,8 @@ class Group < ApplicationRecord
 
   validates :name, presence: true, length: { maximum: 100 }
   validates :icon, presence: true, length: { maximum: 250 }
+
+  def calculate_total
+    dealings.sum(:amount)
+  end
 end

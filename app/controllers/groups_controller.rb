@@ -1,11 +1,28 @@
 class GroupsController < ApplicationController
-  def index; end
+  def index
+    @page_title = 'CATEGORIES'
+    @categories = current_user.groups
+  end
 
-  def new; end
+  def new
+    @group = Group.new
+    @page_title = 'NEW CATEGORY'
+    @back_path = categories_path
+  end
 
-  def create; end
+  def create
+    @group = Group.new(group_params)
+    @group.author = current_user
 
-  def destroy; end
+    if @group.save
+      redirect_to categories_path
+    else
+      flash[:alert] = 'Category could not be saved!'
+      render :new
+    end
+  end
 
-  def show; end
+  def group_params
+    params.require(:group).permit(:name, :icon)
+  end
 end

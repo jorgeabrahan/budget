@@ -1,0 +1,42 @@
+.categories,
+.transactions {
+  display: grid;
+  gap: 1rem;
+}
+
+.category,
+.transaction {
+  background-color: white;
+  box-shadow: 0 0 1px black;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  padding: 0.7rem;
+}
+
+.transaction__icon {
+  font-size: 70px;
+}
+
+.category__details,
+.transaction__details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #bebebe73;
+}
+
+.category__details a {
+  text-decoration: none;
+}
+
+.category small,
+.transaction small {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.category__total,
+.transaction__total {
+  text-align: right;
+  font-weight: 500;
+}

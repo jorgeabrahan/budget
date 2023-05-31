@@ -1,2 +1,18 @@
-<h1>Groups::Dealings#new</h1>
-<p>Find me in app/views/groups/dealings/new.html.erb</p>
+<section class="mt-1-5">
+  <%= form_with(model: @transaction, url: group_dealings_path(@category)) do |f| %>
+    <div class="inputs">
+      <div class="field">
+        <%= f.text_field :name, placeholder: 'Name', required: true, class: 'input' %>
+      </div>
+      <div class="field">
+        <%= f.number_field :amount, placeholder: 'Amount', required: true, class: 'input', min: 1 %>
+      </div>
+      <div class="field">
+        <%= f.collection_select :groups, @categories, :id, :name, { required: true }, { multiple: true, selected: @category, class: 'input-select' } %>
+      </div>
+    </div>
+    <div class="container">
+      <%= f.submit "Create Transaction", class: "link link--blue" %>
+    </div>
+  <% end %>
+</section>

@@ -31,6 +31,36 @@ Mobile web **Budget** application where you can manage your budget: you have a l
 
 ![Entity Relationship Diagram](./repo_images/erd_budget_app.png)
 
+## Project views
+
+Splash screen
+
+![Splash screen](./repo_images/splash_screen.png)
+
+Sign up page
+
+![Sign up page](./repo_images/sign_up_page.png)
+
+Log in page
+
+![Log in page](./repo_images/log_in_page.png)
+
+Home page
+
+![Home page](./repo_images/categories_page.png)
+
+Transactions page
+
+![Transactions page](./repo_images/transactions_page.png)
+
+Add a new category page
+
+![Add a new category page](./repo_images/new_category_page.png)
+
+Add a new transaction page
+
+![Add a new transaction page](./repo_images/new_transaction_page.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
