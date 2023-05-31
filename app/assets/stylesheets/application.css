@@ -62,6 +62,7 @@ body {
 
 .inputs {
   --border-color: #bebebe73;
+
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
   margin-bottom: 1rem;
