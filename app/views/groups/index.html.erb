@@ -1,2 +1,12 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+<%= stylesheet_link_tag "deals_n_groups", "data-turbo-track": "reload" %>
+
+<section class="container mt-1-5">
+  <div class="categories">
+    <%= render partial: 'category', collection: @categories %>
+  </div>
+</section>
+<%= link_to new_category_path, class: "btn-new" do %>
+  <span class="btn-new__text">
+    Add a new category
+  </span>
+<% end %>
