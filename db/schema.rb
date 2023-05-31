@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_30_003416) do
   create_table "dealings", force: :cascade do |t|
     t.bigint "author_id"
     t.string "name"
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_dealings_on_author_id"
