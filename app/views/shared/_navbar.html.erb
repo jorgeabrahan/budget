@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <div class="container navbar__container">
+      <% if @back_path.present? %>
+        <%= link_to @back_path do %>
+          <span class="material-symbols-outlined">
+            arrow_back_ios
+          </span>
+        <% end %>
+      <% end %>
+      <h2><%= @page_title %></h2>
+    </div>
+  </nav>

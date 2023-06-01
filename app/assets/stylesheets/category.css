@@ -1,0 +1,12 @@
+.category__total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 1px #4d4d4d86;
+}
+
+.category__total p {
+  color: #37404a;
+}

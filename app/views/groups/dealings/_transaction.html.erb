@@ -1,0 +1,12 @@
+<div class="transaction">
+  <span class="material-symbols-outlined transaction__icon">
+    receipt_long
+  </span>
+  <div>
+    <div class="transaction__details">
+      <p><%= transaction.name %></p>
+      <p class="transaction__total">$<%= transaction.amount %></p>
+    </div>
+    <small><%= transaction.created_at.strftime("%B %d, %Y") %></small>
+  </div>
+</div>

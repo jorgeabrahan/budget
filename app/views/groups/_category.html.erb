@@ -1,0 +1,10 @@
+<div class="category">
+  <%= image_tag category.icon, loading: 'lazy' %>
+  <div>
+    <div class="category__details">
+      <p><%= link_to category.name, category_transactions_path(category) %></p>
+      <p class="category__total">$<%= category.calculate_total %></p>
+    </div>
+    <small><%= category.created_at.strftime("%B %d, %Y") %></small>
+  </div>
+</div>

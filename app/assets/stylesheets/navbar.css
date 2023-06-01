@@ -1,0 +1,39 @@
+.navbar {
+  background-image: linear-gradient(to right, #82b2e9, #3470b5);
+  color: white;
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.navbar__container--devise {
+  grid-template-columns: 25% 50% 25%;
+}
+
+.navbar h2 {
+  text-align: center;
+  font-weight: 600;
+  grid-column: 2 / 3;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar input[type='submit'] {
+  background: none;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}

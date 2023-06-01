@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag "devise", "data-turbo-track": "reload" %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <nav class="navbar">
+    <div class="container navbar__container navbar__container--devise">
+      <%= link_to home_path do %>
+        <span class="material-symbols-outlined">
+          arrow_back_ios
+        </span>
+      <% end %>
+      <h2>UPDATE</h2>
+      <%= f.submit "Update" %>
+    </div>
+  </nav>
+
+  <div class="inputs mt-1-5">
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, class: "input", placeholder: 'Name' %>
+    </div>
+    <div class="field">
+      <%= f.email_field :email, autocomplete: "email", class: "input", placeholder: 'Email' %>
+    </div>
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password", class: "input", placeholder: "Password (blank if you don't want to change it)" %>
+    </div>
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input", placeholder: 'Password confirmation' %>
+    </div>
+    <div class="field">
+      <%= f.password_field :current_password, autocomplete: "current-password", class: "input", placeholder: 'Current password (Needed to confirm your changes)' %>
+    </div>
+  </div>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %></div>
+
+<%= link_to "Back", :back %>

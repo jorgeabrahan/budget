@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "category", "data-turbo-track": "reload" %>
+<%= stylesheet_link_tag "deals_n_groups", "data-turbo-track": "reload" %>
+
+<div class="category__total">
+  <p>#<%= @category.id %> <%= @category.name %> total:</p>
+  <p><strong>$<%= @category.calculate_total %></strong></p>
+</div>
+
+<div class="container mt-1-5">
+  <section class="transactions">
+    <%= render partial: 'transaction', collection: @transactions %>
+  </section>
+</div>
+
+<%= link_to new_category_transaction_path(@category), class: "btn-new" do %>
+  <span class="btn-new__text">Add a new transaction</span>
+<% end %>

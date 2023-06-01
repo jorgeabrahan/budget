@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+body {
+  background-color: #f0f2f1;
+}
+
+.home__title-container {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+.home__title {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.4rem;
+  text-align: center;
+}
