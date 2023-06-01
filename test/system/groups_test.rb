@@ -35,7 +35,7 @@ class GroupsTest < ApplicationSystemTestCase
 
   test 'Creation date for each group is being displayed' do
     @user.groups.each do |group|
-      assert_text group.created_at.strftime("%B %d, %Y")
+      assert_text group.created_at.strftime('%B %d, %Y')
     end
   end
 end

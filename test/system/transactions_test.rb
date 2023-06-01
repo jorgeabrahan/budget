@@ -7,7 +7,7 @@ class TransactionsTest < ApplicationSystemTestCase
     @category = @user.groups.first
     visit category_transactions_path(@category)
   end
-  
+
   test 'Title transactions should be displayed' do
     assert_text 'TRANSACTIONS'
   end
@@ -38,7 +38,7 @@ class TransactionsTest < ApplicationSystemTestCase
 
   test 'Creation date for each transaction is being displayed' do
     @category.dealings.each do |transaction|
-      assert_text transaction.created_at.strftime("%B %d, %Y")
+      assert_text transaction.created_at.strftime('%B %d, %Y')
     end
   end
 end
