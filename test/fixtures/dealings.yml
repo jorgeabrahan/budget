@@ -1,0 +1,21 @@
+one:
+  name: 'My first transaction'
+  amount: 30
+  updated_at: 2023-05-03 13:03:42
+  created_at: 2023-05-03 13:03:42
+  author: one
+  groups: [one, two]
+two:
+  name: 'My second transaction'
+  amount: 20
+  updated_at: 2023-05-03 13:03:42
+  created_at: 2023-05-03 13:03:42
+  author: one
+  groups: [one]
+three:
+  name: 'My third transaction'
+  amount: 15
+  updated_at: 2023-05-03 13:03:42
+  created_at: 2023-05-03 13:03:42
+  author: one
+  groups: [two]
