@@ -61,6 +61,16 @@ Add a new transaction page
 
 ![Add a new transaction page](./repo_images/new_transaction_page.png)
 
+## Tests running
+
+Rspec tests
+
+![Rspec test](./repo_images/rspec_tests_no_failures.png)
+
+Capybara tests
+
+![Capybara tests](./repo_images/capybara_tests_no_failures.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
