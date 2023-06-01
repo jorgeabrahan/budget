@@ -1,0 +1,14 @@
+one:
+  name: 'My first group'
+  icon: 'https://icons.com/icon.png'
+  updated_at: 2023-05-03 13:03:42
+  created_at: 2023-05-03 13:03:42
+  author: one
+  dealings: [one, two]
+two:
+  name: 'My second group'
+  icon: 'https://icons.com/icon.png'
+  updated_at: 2023-05-03 13:03:42
+  created_at: 2023-05-03 13:03:42
+  author: one
+  dealings: [one, three]
