@@ -7,7 +7,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Live Demo ](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -100,6 +100,11 @@ Capybara tests
 - **Inputs validations in models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Video walkthrough of the project:
+[https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107](https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
