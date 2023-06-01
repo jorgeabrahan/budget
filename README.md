@@ -103,8 +103,7 @@ Capybara tests
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Video walkthrough of the project:
-[https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107](https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107)
+Video walkthrough of the project: [https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107](https://www.loom.com/share/5288eca2a96e4318b15e30b9a5da4107)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
